@@ -24,6 +24,6 @@ It is now fully possible to extend the library from the outside if someone doesn
 As of today's requirements, only the *StaticValueMsgProvider* should be correctly implemented and passing the test.
 The other classes should return a *NotImplementedException*.
 * **HelloWorld.Client** - The client is the core of the application, yet it should be only dedicated to getting a message from a provider
-and putting it somewhere else. I used two different ways to configure it. I configure which writer to choose with the **App.config** file
+and putting it somewhere else. I used two different ways to configure it. I configure which writer to choose with the *App.config* file
 and I configure which message provider to choose with an enumeration. Those differents choices have pros and cons that will be discussed with the team.
 * **HelloWorld.Writer** - The writer is a library, contrary to the API, I used here an abstract class which is then inherited by the ConsoleWriter and the DatabaseWriter class.
